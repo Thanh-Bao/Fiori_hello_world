@@ -27,5 +27,9 @@
 		"karma-ui5": "^3.0.2",
 		"local-web-server": "^5.3.0",
 		"rimraf": "^4.4.1"
+	},
+	"dependencies": {
+		"@openui5/ts-types-esm": "^1.112.0",
+		"@sapui5/ts-types-esm": "^1.108.12"
 	}
 }
