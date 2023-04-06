@@ -1,12 +1,7 @@
-// sap.ui.define(["sap/ui/core/UIComponent", "sap/ui/core/ComponentSupport"], function(UIComponent) {
-// 	"use strict";
-// 	return UIComponent.extend("sap.ui.demo.todo.Component", {
-// 		metadata: {
-// 			manifest: "json"
-// 		}
-// 	});
-// });
-
-// sap.ui.
+sap.ui.getCore().attachInit(() => {
+    sap.ui.xmlview({
+        viewName: "opensap.myapp.view.App"
+    }).placeAt("content");
+})
 
 
