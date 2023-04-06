@@ -3,6 +3,17 @@ xmlns:mvc="sap.ui.core.mvc"
 xmlns:core="sap.ui.core" 
 xmlns="sap.m" 
 xmlns:f="sap.f" 
-displayBlock="true">
-		<Image src="https://cdn.wallpapersafari.com/4/63/UN6qbC.jpg" height="500px" />
+displayBlock="true"
+controllerName="opensap.myapp.controller.App">
+		<Carousel>
+		<pages>
+			<Image 		src="https://cdn.wallpapersafari.com/4/63/UN6qbC.jpg"
+				height="600px"/>
+			<Image		src="https://cdn.wallpapersafari.com/4/63/UN6qbC.jpg"
+				height="600px"/>
+		</pages>
+	</Carousel>
+	<Button
+		text="Say Hello!"
+		press="onShowHello"/>
 </mvc:View>
