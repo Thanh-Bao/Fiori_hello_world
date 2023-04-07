@@ -5,7 +5,7 @@ sap.ui.define([
 	"use strict";
 	return Controller.extend("opensap.myapp.controller.App", {
 		onShowHello: () => {
-			MessageToast.show("Hello openSAP");
+			MessageToast.show("Hello openSAP @@@@");
 		}
 
 	});
