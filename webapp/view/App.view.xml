@@ -14,6 +14,11 @@ controllerName="opensap.myapp.controller.App">
 		</pages>
 	</Carousel>
 	<Button
-		text="Say Hello!"
-		press="onShowHello"/>
+		text="{i18n>showHelloButtonText}"
+		press="onShowHello"/>		
+		<Input
+		value="{helloPanel>/recipient/name}"
+		description="Hello {helloPanel>/recipient/name}"
+		valueLiveUpdate="true"
+		width="60%"/>
 </mvc:View>
