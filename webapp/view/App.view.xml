@@ -12,30 +12,49 @@ controllerName="opensap.myapp.controller.App">
 				<content>
 					<IconTabBar
 						id="idTopLevelIconTabBar"
+						selectedKey="db"
 						class="sapUiResponsiveContentPadding"
 						>
 						<items>
 							<IconTabFilter id="start" text="{i18n>gettingStartedFilter}">
-		<Carousel>
-		<pages>
-			<Image 		src="https://cdn.wallpapersafari.com/4/63/UN6qbC.jpg"
-				height="600px"/>
-			<Image		src="https://cdn.wallpapersafari.com/4/63/UN6qbC.jpg"
-				height="600px"/>
-		</pages>
-	</Carousel>
-	<Button
+								
+								<Carousel>
+								<pages>
+									<Image 		src="https://cdn.wallpapersafari.com/4/63/UN6qbC.jpg"
+										height="600px"/>
+									<Image		src="https://cdn.wallpapersafari.com/4/63/UN6qbC.jpg"
+										height="600px"/>
+								</pages>
+								</Carousel>
+								<Button
 		text="{i18n>showHelloButtonText}"
-		press="onShowHello"/>		
-		<Input
+								press="onShowHello"/>		
+								<Input
 		value="{helloPanel>/recipient/name}"
 		description="Hello {helloPanel>/recipient/name}"
 		valueLiveUpdate="true"
-		width="60%"/>
-		</IconTabFilter>
+									width="60%"/>
+							</IconTabFilter>
+								<IconTabFilter
+				text="{i18n>dataBindingFilter}" key="db">
+				<content>
+					<List
+						headerText="{i18n>productListTitle}"
+						items="{/ProductSet}">
+						<items>
+							<ObjectListItem
+								title="{Name}"
+								number="{Price}"
+								intro="{ProductID}" />
+						</items>
+					</List>
+				</content>
+			</IconTabFilter>
+
+
 		<IconTabFilter id="layouts" text="{i18n>layoutFilter}">
 								<MessageStrip
-type="Information"
+                                    type="Information"
 									showIcon="true"
 									text="Here's a Form Layout inside an Icon Tab Bar …"/>
 								<f:SimpleForm id="simpleFormChange"
