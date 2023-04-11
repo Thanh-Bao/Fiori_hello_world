@@ -53,5 +53,7 @@
 		"no-multi-spaces": 0,
 		"no-shadow": 0,
 		"no-irregular-whitespace": 0
-	}
+	},
+	"plugins": ["@sap/ui5-jsdocs"],
+	"extends": ["plugin:@sap/ui5-jsdocs/recommended", "eslint:recommended"]
 }

@@ -1,6 +1,8 @@
 sap.ui.getCore().attachInit(function () {
     // workaround begin: start a mock server
+    // @ts-ignore
     jQuery.sap.require('sap.ui.core.util.MockServer');
+    // @ts-ignore
     var oMockServer = new sap.ui.core.util.MockServer({
         rootUri: '/destinations/ES5/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/',
     });
