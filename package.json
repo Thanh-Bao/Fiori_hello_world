@@ -15,8 +15,10 @@
 		"serve-dist": "ws --compress -d dist"
 	},
 	"devDependencies": {
+		"@openui5/ts-types": "^1.112.0",
 		"@openui5/ts-types-esm": "^1.112.0",
 		"@sap/eslint-plugin-ui5-jsdocs": "^2.0.8",
+		"@sapui5/ts-types": "^1.102.15",
 		"@sapui5/ts-types-esm": "^1.108.12",
 		"@ui5/cli": "^3.0.6",
 		"eslint": "^8.37.0",

@@ -4,7 +4,6 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>baobaostore.com</title>
-
 		<script
 			id="sap-ui-bootstrap"
 			src="resources/sap-ui-core.js"
@@ -12,10 +11,10 @@
 			data-sap-ui-libs="sap.m"
 			data-sap-ui-compatVersion="edge"
 			data-sap-ui-preload="true"
-			data-sap-ui-resourceroots='{"opensap.myapp": "./"}'
-		></script>
-		<script src="./Component.js"></script>
+			data-sap-ui-onInit="module:sap/ui/demo/walkthrough/index"
+			data-sap-ui-resourceroots='{"sap.ui.demo.walkthrough": "./"}'
+		>
+	</script>
 	</head>
-
 	<body class="sapUiBody" id="content"></body>
 </html>

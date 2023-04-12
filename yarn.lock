@@ -248,6 +248,11 @@
     "@types/jquery" "3.5.13"
     "@types/qunit" "2.5.4"
 
+"@openui5/ts-types@^1.112.0":
+  version "1.112.0"
+  resolved "https://registry.yarnpkg.com/@openui5/ts-types/-/ts-types-1.112.0.tgz#5982858618619d0b28e5d3b825fdb2fefed47dd8"
+  integrity sha512-KlT6OM8sE8U+3+3gfBwaqu2RrK91z4v1JzXsjV+e7vzRpOFIgBZrFE3BQdydFO3BebRr6uvrjikFzFSMZ+v4lg==
+
 "@pnpm/config.env-replace@^1.0.0":
   version "1.0.0"
   resolved "https://registry.npmjs.org/@pnpm/config.env-replace/-/config.env-replace-1.0.0.tgz"
@@ -289,6 +294,11 @@
     "@types/offscreencanvas" "2019.6.4"
     "@types/qunit" "2.5.4"
     "@types/three" "0.125.3"
+
+"@sapui5/ts-types@^1.102.15":
+  version "1.102.15"
+  resolved "https://registry.yarnpkg.com/@sapui5/ts-types/-/ts-types-1.102.15.tgz#d056b317b40c35291cbfd3f1239a6a1cdf686664"
+  integrity sha512-JMTpKBdHeTGvU5XpP75Pd2cY0pfJYUngCyBir/U2pRFJ4abVI43KNsVR+TdCvaXHqcMJJm51ExE5vv1jNCtj3A==
 
 "@sigstore/protobuf-specs@^0.1.0":
   version "0.1.0"
