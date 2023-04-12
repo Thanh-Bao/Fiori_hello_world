@@ -16,7 +16,8 @@ sap.ui.define([
             this.getView().setModel(oModel);
         },
         onShowHello: function () {
-            MessageToast.show("Hello World");
+            console.log(this.__proto__);
+            MessageToast.show(this.getView().getModel().getProperty("/recipient/name"));
         }
     });
 });
