@@ -11,7 +11,7 @@ sap.ui.define([
         _onObjectMatched: function (oEvent) {
             this.getView().bindElement({
                 path: "/" + window.decodeURIComponent(oEvent.getParameter("arguments").invoicePath),
-                model: "invoice"
+                model: "invoice2"
             });
 
         },

@@ -51,7 +51,7 @@
 					"fallbackLocale": ""
 				}
 			},
-			"invoice": {
+			"invoice2": {
 				"dataSource": "invoiceRemote"
 			}
 		},
