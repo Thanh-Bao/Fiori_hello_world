@@ -1,3 +1,7 @@
+// Right click on desktop, add new shortcut
+// Add the target as "[PATH_TO_CHROME]\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=%LOCALAPPDATA%\Google\chromeTemp
+// Click OK.
+
 sap.ui.define([
     "sap/ui/core/UIComponent",
     "sap/ui/model/json/JSONModel"
@@ -17,6 +21,7 @@ sap.ui.define([
                     name: "World"
                 }
             };
+            console.log(oData)
             var oModel = new JSONModel(oData);
             this.setModel(oModel);
         }
