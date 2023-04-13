@@ -1,10 +1,25 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
     "sap/m/MessageToast",
-    "sap/ui/core/Fragment"
-], function (Controller, MessageToast, Fragment) {
+    "sap/ui/core/Fragment",
+    "sap/ui/model/json/JSONModel",
+], function (Controller, MessageToast, Fragment, JSONModel) {
     "use strict";
     return Controller.extend("sap.ui.demo.walkthrough.controller.HelloPanel", {
+
+        onInit: function () {
+            // set data model
+            var oData = {
+                recipient: {
+                    name: "World"
+                }
+            };
+            console.log(oData)
+            var oModel = new JSONModel(oData);
+            this.getView().setModel(oModel);
+
+        },
+
         onShowHello: function () {
             // read msg from i18n model
             var oBundle = this.getView().getModel("i18n").getResourceBundle();
