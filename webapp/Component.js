@@ -1,23 +1,27 @@
-// Right click on desktop, add new shortcut
-// Add the target as "[PATH_TO_CHROME]\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=%LOCALAPPDATA%\Google\chromeTemp
-// Click OK.
-
 sap.ui.define([
-    "sap/ui/core/UIComponent",
-    "sap/ui/model/json/JSONModel"
-], function (UIComponent, JSONModel) {
-    "use strict";
-    return UIComponent.extend("sap.ui.demo.walkthrough.Component", {
-        metadata: {
-            interfaces: ["sap.ui.core.IAsyncContentCreation"],
-            manifest: "json"
-        },
-        init: function () {
-            // call the init function of the parent
-            UIComponent.prototype.init.apply(this, arguments);
+	"sap/ui/core/UIComponent",
+	"sap/ui/core/tutorial/odatav4/model/models"
+], function (UIComponent, models) {
+	"use strict";
 
-            // create the views based on the url/hash
-            this.getRouter().initialize();
-        }
-    });
+	return UIComponent.extend("sap.ui.core.tutorial.odatav4.Component", {
+
+		metadata : {
+			manifest : "json"
+		},
+
+		/**
+		 * The component is initialized by UI5 automatically during the startup of the app and calls
+		 * the init method once.
+		 * @public
+		 * @override
+		 */
+		init : function () {
+			// call the base component's init function
+			UIComponent.prototype.init.apply(this, arguments);
+
+			// set the device model
+			this.setModel(models.createDeviceModel(), "device");
+		}
+	});
 });
