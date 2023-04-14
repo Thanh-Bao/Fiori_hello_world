@@ -12,6 +12,7 @@ sap.ui.define([
         _onObjectMatched: function (oEvent) {
             this.byId("rating").reset();
             this.getView().bindElement({
+                // https://meyerweb.com/eric/tools/dencoder/
                 path: "/" + window.decodeURIComponent(oEvent.getParameter("arguments").invoicePath),
                 model: "invoice2"
             });
