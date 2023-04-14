@@ -1,8 +1,6 @@
 sap.ui.define([
   'sap/ui/core/UIComponent',
-  'sap/ui/model/json/JSONModel',
-  'sap/ui/model/BindingMode'
-], function (UIComponent,JSONModel,BindingMode) {
+], function (UIComponent) {
   'use strict';
 
   return UIComponent.extend("in.sijas.ui5.app.Component", {

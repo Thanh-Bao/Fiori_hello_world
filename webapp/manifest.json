@@ -7,7 +7,7 @@
       "version": "1.0.0"
     },
     "dataSources": {
-      "northwind": {
+      "myOdata123": {
         "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/",
         "type": "OData",
         "settings": {
@@ -38,8 +38,8 @@
       }
     },
     "models": {
-      "": {
-        "dataSource": "northwind"
+      "myOdata999": {
+        "dataSource": "myOdata123"
       }
     }
   }
