@@ -8,7 +8,6 @@
             <Input value="{/firstName}" valueLiveUpdate="true" width="200px" enabled="{/enabled}" />
             <Label text="Last Name" />
             <Input value="{/lastName}" valueLiveUpdate="true" width="200px" enabled="{/enabled}" />
-            <Label text="Enabled" />
             <CheckBox selected="{/enabled}" />
         </form:SimpleForm>
     </Panel>
