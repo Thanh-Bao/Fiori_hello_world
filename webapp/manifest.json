@@ -1,0 +1,46 @@
+{
+  "_version": "1.12.0",
+  "sap.app": {
+    "id": "in.sijas.ui5.app",
+    "type": "application",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "dataSources": {
+      "northwind": {
+        "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/",
+        "type": "OData",
+        "settings": {
+          "odataVersion": "2.0"
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "phone": true,
+      "tablet": true
+    }
+  },
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "in.sijas.ui5.app.view.App",
+      "type": "XML",
+      "id": "app"
+    },
+    "dependencies": {
+      "minVersion": "1.93",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "models": {
+      "": {
+        "dataSource": "northwind"
+      }
+    }
+  }
+}

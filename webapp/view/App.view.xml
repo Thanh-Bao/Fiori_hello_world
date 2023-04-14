@@ -1,0 +1,28 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m">
+  <App>
+    <Table id="employeeTable" items="{/Employees}" growing="true">
+      <columns>
+        <Column>
+          <Label text="Employee ID" />
+        </Column>
+        <Column>
+          <Label text="Name" />
+        </Column>
+        <Column>
+          <Label text="City" />
+        </Column>
+        <Column>
+          <Label text="Notes" />
+        </Column>
+      </columns>
+      <items>
+        <ColumnListItem>
+          <Text text="{EmployeeID}" />
+          <Text text="{parts:[{path:'FirstName'},{path:'LastName'}]}" />
+          <Text text="{City}" />
+          <Text text="{Notes}" />
+        </ColumnListItem>
+      </items>
+    </Table>
+  </App>
+</mvc:View>

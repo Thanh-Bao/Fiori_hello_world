@@ -8,11 +8,18 @@
 		"npm": ">= 8"
 	},
 	"scripts": {
-		"start": "ui5 serve",
+		"start": "ui5 serve --open index.html",
 		"lint": "eslint webapp",
 		"build": "ui5 build -a --clean-dest",
 		"build-self-contained": "ui5 build self-contained -a --clean-dest",
 		"serve-dist": "ws --compress -d dist"
+	},
+	"dependencies": {
+		"@openui5/sap.f": "^1",
+		"@openui5/sap.m": "^1",
+		"@openui5/sap.ui.core": "^1",
+		"@openui5/sap.ui.layout": "^1",
+		"@openui5/themelib_sap_belize": "^1"
 	},
 	"devDependencies": {
 		"@openui5/ts-types-esm": "^1.112.0",

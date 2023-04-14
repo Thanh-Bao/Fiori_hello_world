@@ -240,6 +240,48 @@
     read-package-json-fast "^3.0.0"
     which "^3.0.0"
 
+"@openui5/sap.f@^1":
+  version "1.112.0"
+  resolved "https://registry.yarnpkg.com/@openui5/sap.f/-/sap.f-1.112.0.tgz#ba2cbb8c7fa045e55e4c389c1ba10b0f7ac3eea4"
+  integrity sha512-i+bJcTYJzhSTRfZxWu+dkaGJ6YR4zEAgqqb5KLXw0QqltJBPb8zd5Uri1cUEDp8WTNVBzAv8/Gtl2P9EwmXd9A==
+  dependencies:
+    "@openui5/sap.m" "1.112.0"
+    "@openui5/sap.ui.core" "1.112.0"
+    "@openui5/sap.ui.layout" "1.112.0"
+
+"@openui5/sap.m@1.112.0", "@openui5/sap.m@^1":
+  version "1.112.0"
+  resolved "https://registry.yarnpkg.com/@openui5/sap.m/-/sap.m-1.112.0.tgz#48ff0d10bdf20b4fbc899af030e2e3a9b2f35782"
+  integrity sha512-8Ga6gUENEec+j8xRzOT5WqxTr2ddYepAnW2AWRAMnmgHsf+E3j/Zq9H261ksJ9uD9VP+hpAsL7uMABf+Qsd2SA==
+  dependencies:
+    "@openui5/sap.ui.core" "1.112.0"
+    "@openui5/sap.ui.layout" "1.112.0"
+    "@openui5/sap.ui.unified" "1.112.0"
+
+"@openui5/sap.ui.core@1.112.0", "@openui5/sap.ui.core@^1":
+  version "1.112.0"
+  resolved "https://registry.yarnpkg.com/@openui5/sap.ui.core/-/sap.ui.core-1.112.0.tgz#79085f4485db50b29627599673e1d0635e497675"
+  integrity sha512-z41l8nHeLW1Cc0gDtGloYauJMPSLBhezjMzykiBxlelNuSmtaha98YP9DueU9Cd7ry4Qb177rMZqqbGJTiBR8g==
+
+"@openui5/sap.ui.layout@1.112.0", "@openui5/sap.ui.layout@^1":
+  version "1.112.0"
+  resolved "https://registry.yarnpkg.com/@openui5/sap.ui.layout/-/sap.ui.layout-1.112.0.tgz#24153c22413952fd776e0c87d676cebdd53f4818"
+  integrity sha512-bqgaWx/x79pYnFu0eOqmHCT29UOxArotnAheJ7a/un60Jot0btUIR+AHO6OUjBgK/kz2ZguvePVrOw58EanL2Q==
+  dependencies:
+    "@openui5/sap.ui.core" "1.112.0"
+
+"@openui5/sap.ui.unified@1.112.0":
+  version "1.112.0"
+  resolved "https://registry.yarnpkg.com/@openui5/sap.ui.unified/-/sap.ui.unified-1.112.0.tgz#35e7ee6d3fc1ca9622ed02ae4bb12477055df71d"
+  integrity sha512-6vU4Ks+QTbxl+xUEErhUYtUQpDk0L/kJ4uKcEsMJS6nipS9n0plGW+CQfU5e0DZbD0oaDlyJza0WhPJB45Du0Q==
+  dependencies:
+    "@openui5/sap.ui.core" "1.112.0"
+
+"@openui5/themelib_sap_belize@^1":
+  version "1.112.0"
+  resolved "https://registry.yarnpkg.com/@openui5/themelib_sap_belize/-/themelib_sap_belize-1.112.0.tgz#dd967518a8ba378347fa6c5aacefb0e61a984a37"
+  integrity sha512-yJ6iGNkOW/PO84YJKiEgwOhHrnNKuSWt97EMVmNElMh+OJGBD6O+vKe8CPaY4KE79sl14cL1Ecr/c8Omxef9KQ==
+
 "@openui5/ts-types-esm@^1.112.0":
   version "1.112.0"
   resolved "https://registry.npmjs.org/@openui5/ts-types-esm/-/ts-types-esm-1.112.0.tgz"
