@@ -9,7 +9,7 @@
 		"npm": ">= 8"
 	},
 	"scripts": {
-		"start": "ui5 serve",
+		"start": "ui5 serve --open index.js",
 		"lint": "eslint webapp",
 		"build": "ui5 build -a --clean-dest",
 		"build-self-contained": "ui5 build self-contained -a --clean-dest",
