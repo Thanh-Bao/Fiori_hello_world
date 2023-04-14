@@ -1,24 +1,22 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m">
-  <App>
-    <Table items="{myOdata999>/Employees}">
-      <columns>
-        <Column>
-        </Column>
-        <Column>
-        </Column>
-        <Column>
-        </Column>
-        <Column>
-        </Column>
-      </columns>
-      <items>
-        <ColumnListItem>
-          <Text text="{myOdata999>EmployeeID}" />
-          <Text text="{parts:[{path:'myOdata999>FirstName'},{path:'myOdata999>LastName'}]}" />
-          <Text text="{myOdata999>City}" />
-          <Text text="{myOdata999>Notes}" />
-        </ColumnListItem>
-      </items>
-    </Table>
-  </App>
+  <Table items="{myOdata999>/Employees}">
+    <columns>
+      <Column>
+      </Column>
+      <Column>
+      </Column>
+      <Column>
+      </Column>
+      <Column>
+      </Column>
+    </columns>
+    <items>
+      <ColumnListItem>
+        <Text text="{myOdata999>EmployeeID}" />
+        <Text text="{parts:[{path:'myOdata999>FirstName'},{path:'myOdata999>LastName'}]}" />
+        <Text text="{myOdata999>City}" />
+        <Text text="{myOdata999>Notes}" />
+      </ColumnListItem>
+    </items>
+  </Table>
 </mvc:View>
