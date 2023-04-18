@@ -8,7 +8,7 @@
     },
     "dataSources": {
       "myOdata123": {
-        "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/",
+        "uri": "https://expressjs.bao.name.vn/ZSBUI_PHONE_PRICE",
         "type": "OData",
         "settings": {
           "odataVersion": "2.0"
@@ -39,7 +39,11 @@
     },
     "models": {
       "myOdata999": {
-        "dataSource": "myOdata123"
+        "dataSource": "myOdata123",
+        "settings": {
+          "useBatch": false,
+          "defaultBindingMode": "TwoWay"
+        }
       }
     }
   }

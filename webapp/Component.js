@@ -6,7 +6,7 @@ sap.ui.define([
   return UIComponent.extend("in.sijas.ui5.app.Component", {
     metadata: {
       "interfaces": ["sap.ui.core.IAsyncContentCreation"],
-      "manifest" : "json"
+      "manifest": "json"
     },
     init: function () {
       UIComponent.prototype.init.apply(this, arguments);

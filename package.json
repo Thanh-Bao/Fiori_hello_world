@@ -19,12 +19,14 @@
 		"@openui5/sap.m": "^1",
 		"@openui5/sap.ui.core": "^1",
 		"@openui5/sap.ui.layout": "^1",
-		"@openui5/themelib_sap_belize": "^1"
+		"@openui5/themelib_sap_belize": "^1",
+		"@openui5/themelib_sap_horizon": "1.112.0"
 	},
 	"devDependencies": {
 		"@openui5/ts-types-esm": "^1.112.0",
 		"@sap/eslint-plugin-ui5-jsdocs": "^2.0.8",
 		"@sapui5/ts-types-esm": "^1.108.12",
+		"@types/jquery": "^3.5.16",
 		"@ui5/cli": "^3.0.6",
 		"eslint": "^8.37.0",
 		"local-web-server": "^5.3.0",
