@@ -1,82 +1,101 @@
 {
-	"_version": "1.3.0",
+	"_version": "1.21.0",
 	"sap.app": {
-		"_version": "1.3.0",
-		"id": "opensap.myapp",
+		"id": "sap.ui.demo.nav",
 		"type": "application",
+		"i18n": {
+			"bundleUrl": "i18n/i18n.properties",
+			"supportedLocales": [
+				""
+			],
+			"fallbackLocale": ""
+		},
 		"title": "{{appTitle}}",
-		"i18n": "i18n/i18n.properties",
 		"description": "{{appDescription}}",
 		"applicationVersion": {
 			"version": "1.0.0"
 		},
 		"dataSources": {
-			"ES5": {
-				"uri": "/destinations/ES5/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/",
+			"employeeRemote": {
+				"uri": "/here/goes/your/serviceUrl/",
 				"type": "OData",
 				"settings": {
-					"odataVersion": "2.0"
+					"odataVersion": "2.0",
+					"localUri": "localService/metadata.xml"
 				}
 			}
 		}
 	},
 	"sap.ui": {
-		"_version": "1.3.0",
 		"technology": "UI5",
 		"deviceTypes": {
 			"desktop": true,
 			"tablet": true,
 			"phone": true
-		},
-		"supportedThemes": [
-			"sap_bluecrystal"
-		]
+		}
 	},
 	"sap.ui5": {
-		"_version": "1.2.0",
 		"rootView": {
-			"viewName": "opensap.myapp.view.App",
+			"viewName": "sap.ui.demo.nav.view.App",
 			"type": "XML",
+			"async": true,
 			"id": "app"
 		},
+		"dependencies": {
+			"minUI5Version": "1.98.0",
+			"libs": {
+				"sap.m": {},
+				"sap.ui.core": {}
+			}
+		},
 		"models": {
-			"helloPanel": {
-				"type": "sap.ui.model.json.JSONModel",
-				"uri": "model/HelloPanel.json"
-			},
-			"address": {
-				"type": "sap.ui.model.json.JSONModel",
-				"uri": "model/Address.json"
-			},
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "opensap.myapp.i18n.i18n"
+					"bundleName": "sap.ui.demo.nav.i18n.i18n",
+					"supportedLocales": [
+						""
+					],
+					"fallbackLocale": ""
 				}
 			},
 			"": {
-				"dataSource": "ES5"
+				"dataSource": "employeeRemote"
 			}
 		},
-		"handleValidation": true,
-		"autoPrefixId": true,
-		"dependencies": {
-			"minUI5Version": "1.34",
-			"libs": {
-				"sap.ui.core": {
-					"minVersion": "1.34.0"
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"type": "View",
+				"viewType": "XML",
+				"path": "sap.ui.demo.nav.view",
+				"controlId": "app",
+				"controlAggregation": "pages",
+				"transition": "slide",
+				"bypassed": {
+					"target": "notFound"
 				},
-				"sap.m": {
-					"minVersion": "1.34.0"
+				"async": true
+			},
+			"routes": [
+				{
+					"pattern": "",
+					"name": "appHome",
+					"target": "home"
+				}
+			],
+			"targets": {
+				"home": {
+					"id": "home",
+					"name": "Home",
+					"level": 1
 				},
-				"sap.ui.layout": {
-					"minVersion": "1.34.0"
+				"notFound": {
+					"id": "notFound",
+					"name": "NotFound",
+					"transition": "show"
 				}
 			}
-		},
-		"contentDensities": {
-			"compact": true,
-			"cozy": true
 		}
 	}
 }

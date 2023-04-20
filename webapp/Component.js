@@ -1,19 +1,22 @@
-sap.ui.define(['sap/ui/core/UIComponent'], function (UIComponent) {
-	'use strict';
+sap.ui.define([
+	"sap/ui/core/UIComponent"
+], function (UIComponent) {
+	"use strict";
 
-	return UIComponent.extend('opensap.myapp.Component', {
+	return UIComponent.extend("sap.ui.demo.nav.Component", {
+
 		metadata: {
-			manifest: 'json',
+			manifest: "json"
 		},
 
 		init: function () {
 			// call the init function of the parent
 			UIComponent.prototype.init.apply(this, arguments);
 
-			// used only for this lessons to show the request individually...
-			this.getModel().setUseBatch(false);
+			// create the views based on the url/hash
+			this.getRouter().initialize();
+		}
 
-			// additional initialization can be done here
-		},
 	});
+
 });
