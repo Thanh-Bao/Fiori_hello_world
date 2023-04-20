@@ -4,14 +4,14 @@
 	xmlns="sap.m"
 	controllerName="in.sijas.ui5.app.controller.App"
 >
-	<Table items="{myOdata999>/ZC_PHONE_PRICE}">
+	<Table items="{/ZC_PHONE_PRICE}">
 		<columns>
 			<Column>
 			</Column>
 		</columns>
 		<items>
 			<ColumnListItem>
-				<Text text="abc" />
+				<Text text="{id}" />
 			</ColumnListItem>
 		</items>
 	</Table>
