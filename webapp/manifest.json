@@ -92,29 +92,44 @@
 					"pattern": "employees/{employeeId}",
 					"name": "employee",
 					"target": "employee"
+				},
+				{
+					"pattern": "employees/{employeeId}/resume",
+					"name": "employeeResume",
+					"target": "employeeResume"
 				}
 			],
 			"targets": {
 				"home": {
 					"id": "home",
 					"name": "Home",
-					"level": 1
+					"level": 1,
+					"transition": "flip"
 				},
 				"notFound": {
 					"id": "notFound",
 					"name": "NotFound",
-					"transition": "show"
+					"transition": "flip"
+					
 				},
 				"employees": {
 					"id": "employeeList",
 					"path": "sap.ui.demo.nav.view.employee",
 					"name": "EmployeeList",
-					"level": 2
+					"level": 2,
+					"transition": "flip"
 				},
 				"employee": {
 					"id": "employee",
 					"name": "employee.Employee",
-					"level": 3
+					"level": 3,
+					"transition": "flip"
+				},
+				"employeeResume": {
+					"id": "resume",
+					"name": "employee.Resume",
+					"level": 4,
+					"transition": "flip"
 				}
 			}
 		}
